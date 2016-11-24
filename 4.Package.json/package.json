@@ -1,0 +1,22 @@
+{
+  "name": "node-demos",
+  "version": "1.0.0",
+  "description": "All basic Node.js Demos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayminpanchal/node-demos.git"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "Jaymin Panchal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayminpanchal/node-demos/issues"
+  },
+  "homepage": "https://github.com/jayminpanchal/node-demos#readme"
+}
