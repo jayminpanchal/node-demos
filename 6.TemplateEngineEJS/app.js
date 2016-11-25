@@ -7,11 +7,13 @@ var express = require("express");
 var app = express();
 app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
-    res.send(__dirname + '/index.html');
+    //res.send(__dirname + '/index.html');
+    res.render('index'); //Direct passing arguement
 });
 
 app.get('/contact', function (req, res) {
-    res.send(__dirname + '/contact.html');
+    //res.send(__dirname + '/contact.html');
+    res.render('contact'); //Direct passing arguement
 });
 
 app.get('/profile/:name', function (req, res) {
