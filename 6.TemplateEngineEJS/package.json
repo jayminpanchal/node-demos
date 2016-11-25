@@ -1,0 +1,15 @@
+{
+  "name": "express-node-demos",
+  "version": "1.0.0",
+  "description": "Template Engine EJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaymin Panchal",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}

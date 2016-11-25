@@ -14,4 +14,8 @@ app.get('/contact', function (req, res) {
     res.send('This the contact page.');
 });
 
+app.get('/profile/:name', function (req, res) {
+    res.send('The user name is:' + req.params.name);
+});
+
 app.listen(3000);
