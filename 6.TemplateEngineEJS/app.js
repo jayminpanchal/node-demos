@@ -15,7 +15,17 @@ app.get('/contact', function (req, res) {
 });
 
 app.get('/profile/:name', function (req, res) {
-    res.render('profile', {person: req.params.name});
+    res.render('profile', {person: req.params.name}); //Direct passing arguement
+});
+
+app.get('/user/:name/:age', function (req, res) {
+    var data = {
+        name: req.params.name,
+        age: req.params.age,
+        job: 'Web Developer',
+        hobbies: ['eating', 'fighting', 'fishing']
+    };
+    res.render('profile_1', {data: data}); //Passing more than one parameter
 });
 
 app.listen(3000);
