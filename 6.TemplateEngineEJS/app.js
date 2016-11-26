@@ -5,7 +5,10 @@
 var express = require("express");
 
 var app = express();
+
 app.set('view engine', 'ejs');
+app.use('/assets', express.static('assets'));
+
 app.get('/', function (req, res) {
     //res.send(__dirname + '/index.html');
     res.render('index'); //Direct passing arguement
