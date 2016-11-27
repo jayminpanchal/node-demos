@@ -3,9 +3,11 @@
  */
 
 var express = require("express");
-
+var bodyParser = require('body-parser');
 var app = express();
 
+var jsonParser = bodyParser.json();
+var urlencodedParser = bodyParser.urlencoded({extended: false});
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
 
@@ -16,6 +18,12 @@ app.get('/', function (req, res) {
 
 app.get('/contact', function (req, res) {
     //res.send(__dirname + '/contact.html');
+    res.render('contact'); //Direct passing arguement
+});
+
+app.post('/contact', urlencodedParser, function (req, res) {
+    //res.send(__dirname + '/contact.html');
+    console.log(req.body);
     res.render('contact'); //Direct passing arguement
 });
 

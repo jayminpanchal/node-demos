@@ -1,9 +1,17 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="/assets/styles.css"/>
 </head>
 <body>
 <% include nav.ejs %>
 <h1>Contact Us</h1>
+
+<form id="contact-form" method="post" action="/contact">
+    <label>Name</label>
+    <input type="text" name="name"/><br/>
+    <label>Name</label>
+    <input type="email" name="email"/><br/>
+    <button type="submit" name="submit">Submit</button>
+</form>
 </body>
 </html>
