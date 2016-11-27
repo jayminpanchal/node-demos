@@ -24,7 +24,7 @@ app.get('/contact', function (req, res) {
 app.post('/contact', urlencodedParser, function (req, res) {
     //res.send(__dirname + '/contact.html');
     console.log(req.body);
-    res.render('contact'); //Direct passing arguement
+    res.render('contact_success', {data: req.body}); //Direct passing arguement
 });
 
 app.get('/profile/:name', function (req, res) {
