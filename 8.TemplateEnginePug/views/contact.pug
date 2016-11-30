@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        link(rel="stylesheet" href="/assets/styles.css")
+    body
+        h1 Contact Us
+        form(method="post",action="/contact")
+            p Username:
+            input(type="text", name="name", value="")
+            p Email:
+            input(type="text", name="email", value="")
+            input(type="submit", value="Submit")
