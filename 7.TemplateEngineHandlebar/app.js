@@ -11,7 +11,7 @@ app.use('/assets', express.static('assets'));
 app.set('view engine', 'hbs');
 
 app.get('/', function (req, res) {
-    res.render('index', {'title': 'Demo Page'});
+    res.render('index', {'title': 'Demo Page', 'condition': false});
 });
 
 app.get('/contact', function (req, res) {
