@@ -8,14 +8,14 @@
     {{# if errors }}
         <section class="errors">
             <ul>
-                {{# each}}
+                {{# each errors}}
                     <li>{{ this.msg }}</li>
                 {{/each}}
             </ul>
         </section>
     {{/if}}
 {{/if}}
-<form method="post" action="/submitForm">
+<form method="post" action="/submit">
     <div class="input">
         <label for="email">E-mail</label>
         <input type="text" name="email"/>

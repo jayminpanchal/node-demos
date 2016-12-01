@@ -9,9 +9,10 @@
   "author": "Jaymin Panchal",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
     "express-session": "^1.14.2",
-    "express-validator": "^3.0.0",
-    "express-handlebars": "^3.0.0"
+    "express-validator": "^3.0.0"
   }
 }
