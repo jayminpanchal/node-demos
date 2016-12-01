@@ -20,4 +20,15 @@ app.get('/', function (req, res) {
     req.session.errors = null;
 });
 
+app.post('/submit', function (req, res, next) {
+    req.check('email', 'Invali email address').isEmail();
+    req.check('password', 'Invalid password').isLength({min: 4}).equals(req.body.cpasswor);
+
+    var errors = req.validationErrors();
+    if (errors) {
+        req.session.errors = errors;
+    }
+    res.redirect("/");
+});
+
 app.listen(3000);

@@ -1,4 +1,20 @@
 <h1>{{title}}</h1>
+
+{{# if success}}
+    <section class="success">
+        <h2>Success Validation</h2>
+    </section>
+{{ else}}
+    {{# if errors }}
+        <section class="errors">
+            <ul>
+                {{# each}}
+                    <li>{{ this.msg }}</li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+{{/if}}
 <form method="post" action="/submitForm">
     <div class="input">
         <label for="email">E-mail</label>
