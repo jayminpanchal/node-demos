@@ -1,0 +1,17 @@
+{
+  "name": "node-bower",
+  "description": "Node with bootstrap",
+  "main": "app.js",
+  "authors": [
+    "Jaymin Panchal"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jayminpanchal/node-demos",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

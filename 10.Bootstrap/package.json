@@ -1,0 +1,16 @@
+{
+  "name": "express-node-demos",
+  "version": "1.0.0",
+  "description": "Express validation and Session",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaymin Panchal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.1.1"
+  }
+}
